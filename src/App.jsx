@@ -1,12 +1,15 @@
+import { Route, Routes } from 'react-router-dom'
 import './assets/css/tailwind.css'
 import HomePage from './pages/HomePage'
+import CallRoomPage from './pages/room/CallRoomPage'
 
 function App() {
 
   return (
-    <>
-      <HomePage/>
-    </>
+    <Routes>
+      <Route index element={<HomePage/>}/>
+      <Route path='/call-room' element={<CallRoomPage/>}/>
+    </Routes>
   )
 }
 
