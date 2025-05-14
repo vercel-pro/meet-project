@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route index element={<HomePage/>}/>
-      <Route path='/call-room' element={<CallRoomPage/>}/>
+      <Route path='/call-room/:roomCode' element={<CallRoomPage/>}/>
     </Routes>
   )
 }
